@@ -113,7 +113,6 @@ static u32 gus_findMemSize(u16 base) {
 
 static bool gus_probe(u16 base) {
     u8 resReg;
-    u32 memSize;
 
     vgacon_print("GUS Probe on Port %x\n", base);
     gus_writeReg8(base, GUS_REG_RESET, 0, true);
@@ -138,7 +137,6 @@ static bool gus_probe(u16 base) {
 
     vgacon_printOK("GUS @ 0x%03x: Reset OK!\n", base);
 
-    DBG("-> GUS found on Port %x, RAM size %lu bytes\n", base, memSize);
     return true;    
 }
 
