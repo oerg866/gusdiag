@@ -21,6 +21,11 @@ Without any parameters it scans ports 0x220, 0x240, 0x260 and 0x280 for GUS card
 * Type `wmake`
 * That's it!
 
+# Thanks
+
+* agent_x007 for letting me (attempt to) repair his card
+* Tiido Priimägi for his GUS info and troubleshooting knowledge
+
 # License
 
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc/4.0/deed.en)
