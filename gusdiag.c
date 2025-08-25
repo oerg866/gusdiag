@@ -121,6 +121,7 @@ static bool gus_probe(u16 base) {
     
     
     if (0 != (resReg & 0x07)) {
+        DBG("Card failed to ENTER reset state\n");
         return false;
     }
 
@@ -131,6 +132,7 @@ static bool gus_probe(u16 base) {
     resReg = gus_readReg(base, GUS_REG_RESET, true);
     
     if (1 != (resReg & 0x07)) {
+        DBG("Card failed to EXIT reset state\n");
         return false;
     }
 
